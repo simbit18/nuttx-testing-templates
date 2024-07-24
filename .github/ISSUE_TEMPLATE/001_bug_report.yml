@@ -1,0 +1,77 @@
+name: Bug report
+description: Report a bug to improve NuttX stability
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Hello NuttX Community member! Please keep things tidy by putting your post in the proper place:
+
+        Reporting a bug: use this form.
+        Asking a question or getting help: use this form [NuttX](https://github.com/apache/nuttx/issues) or [Mailing list](https://nuttx.apache.org/community/)".
+        Requesting a new feature: Search to see if it exists already. If not, use this form .
+  - type: textarea
+    attributes:
+      label: "Description / Steps to reproduce the issue"
+      description: "A clear and concise description of what the bug is, and why you consider it to be a bug, and steps for how to reproduce it"
+      placeholder: |
+        A description with steps to reproduce the issue.
+        May include logs, images, or videos.
+        1. Step 1
+        2. Step 2
+    validations:
+      required: true
+
+  - type: checkboxes
+    attributes:
+      label: "Verification"
+      description: | 
+        Please verify that you've followed these steps:
+          - Confirm the problem is reproducible on [**master**](https://github.com/apache/nuttx) or [**latest stable**](https://nuttx.apache.org/download) release.
+          - Run `make distclean` when encountering build issues.
+          - Search [existing issues](https://github.com/apache/nuttx/issues) (including [closed](https://github.com/apache/nuttx/issues?q=is%3Aissue+is%3Aclosed))
+          - Read the [FAQ](https://nuttx.apache.org/docs/latest/faq/index.html).
+      options:
+        - label: "I have verified before submitting the report."
+          required: true
+
+  - type: input
+    attributes:
+      label: "Operating system/version"
+      placeholder: "Ubuntu 20.4, macOS 13, Windows/MSYS_NT-10.0-19045, ecc"
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: "NuttX Version"
+      placeholder: "master, 12.5.1, ecc"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: arch
+    attributes:
+      label: What architecture(s) are you seeing the problem on?
+      multiple: true
+      options:
+        - all
+        - arm
+        - arm64
+        - avr
+        - ceva
+        - mips
+        - misoc
+        - ort1k
+        - renesas
+        - risc-v
+        - sim
+        - sparc
+        - tricore
+        - x86
+        - x86_64
+        - xtensa
+        - z16
+        - z80
+    validations:
+      required: true
