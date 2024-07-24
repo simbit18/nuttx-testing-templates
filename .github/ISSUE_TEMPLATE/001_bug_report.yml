@@ -34,7 +34,12 @@ body:
       options:
         - label: "I have verified before submitting the report."
           required: true
+  - type: markdown
+    attributes:
+      value: |
+        ### Environment
 
+        Please specify your environment.
   - type: input
     attributes:
       label: "Operating system/version"
