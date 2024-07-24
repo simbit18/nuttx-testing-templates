@@ -1,6 +1,7 @@
 name: Bug report
 description: Report a bug to improve NuttX stability
-labels: ["bug"]
+title: "[BUG] import/path: bug <title>"
+labels: [bug]
 body:
   - type: markdown
     attributes:
@@ -8,8 +9,8 @@ body:
         Hello NuttX Community member! Please keep things tidy by putting your post in the proper place:
 
         Reporting a bug: use this form.
-        Asking a question or getting help: use this form [NuttX](https://github.com/apache/nuttx/issues) or [Mailing list](https://nuttx.apache.org/community/)".
-        Requesting a new feature: Search to see if it exists already. If not, use this form .
+        Asking a question or getting help: use the [General Help](https://github.com/simbit18/nuttx-testing-templates/issues/new?assignees=&labels=question&projects=&template=003_help.yml&title=help%3A+help+title) form or [Mailing list](https://nuttx.apache.org/community/).
+        Requesting a new feature: use the [Feature request](https://github.com/simbit18/nuttx-testing-templates/issues/new?assignees=&labels=enhancement&projects=&template=002_feature_request.yml) form.
   - type: textarea
     attributes:
       label: "Description / Steps to reproduce the issue"
@@ -31,14 +32,15 @@ body:
   - type: input
     attributes:
       label: "Operating system/version"
-      placeholder: "Ubuntu 20.4, macOS 13, Windows/MSYS_NT-10.0-19045, ecc"
+      description: On which OS does this issue occur?
+      placeholder: "eg. Ubuntu 20.4, macOS 13, Windows/MSYS_NT-10.0-19045, ecc"
     validations:
       required: true
 
   - type: input
     attributes:
       label: "NuttX Version"
-      placeholder: "master, 12.5.1, ecc"
+      placeholder: "eg. master, 12.5.1, ecc"
     validations:
       required: true
 
@@ -53,6 +55,7 @@ body:
         - arm64
         - avr
         - ceva
+        - hc
         - mips
         - misoc
         - ort1k
@@ -66,6 +69,15 @@ body:
         - xtensa
         - z16
         - z80
+    validations:
+      required: true
+
+  - type: input
+    id: Area
+    attributes:
+      label: Related area
+      description: Please briefly explain the area of your Feature Request.
+      placeholder: eg. Board support, specific Peripheral, GPIO, Wifi...
     validations:
       required: true
 

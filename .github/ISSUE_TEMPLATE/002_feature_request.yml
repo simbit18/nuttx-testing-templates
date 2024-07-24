@@ -1,20 +1,50 @@
----
 name: Feature request
-about: Suggest an idea for this project
-title: ''
-labels: ''
-assignees: ''
+description: Request an enhancement for NuttX
+title: "[FEATURE] <title>"
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Hello NuttX Community member! Please keep things tidy by putting your post in the proper place:
 
----
+        Requesting a new feature: use this form.
+        Asking a question or getting help: use the [General Help](https://github.com/simbit18/nuttx-testing-templates/issues/new?assignees=&labels=question&projects=&template=003_help.yml&title=help%3A+help+title) form or [Mailing list](https://nuttx.apache.org/community/).
+        Reporting a bug: use the [Bug report](https://github.com/simbit18/nuttx-testing-templates/issues/new?assignees=&labels=bug&projects=&template=001_bug_report.yml) form.
+     
+  - type: textarea
+    id: question-description
+    attributes:
+      label: Is your feature request related to a problem? Please describe.
+      description: Please provide a clear and concise description of what the problem is. Add relevant issue link.
+    validations:
+      required: true
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+  - type: textarea
+    id: solution
+    attributes:
+      label: Describe the solution you'd like
+      description: Please provide a clear and concise description of what you want to happen.
+    validations:
+      required: true
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Describe alternatives you've considered
+      description: Please provide a clear and concise description of any alternative solutions or features you've considered.
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+  - type: markdown
+    attributes:
+      value: |
+        ### Before You Submit
 
-**Additional context**
-Add any other context or screenshots about the feature request here.
+        Please verify that you've followed these steps:
+          - Search [existing feature requests](https://github.com/apache/nuttx/issues) (including [closed](https://github.com/apache/nuttx/issues?q=is%3Aissue+is%3Aclosed))
+
+  - type: checkboxes
+    attributes:
+      label: "Verification"
+      options:
+        - label: "I have verified before submitting the report."
+          required: true
