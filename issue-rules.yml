@@ -1,0 +1,14 @@
+
+# primary rules
+rules:
+# Area: 1
+- valueFor: '**Related area**'
+  contains: 'i2c'
+  addLabels: ['I2C']
+# Area: 2
+- valueFor: '**Related area**'
+  contains: 'adc'
+  addLabels: ['ADC']
+- valueFor: '**Related area**'
+  contains: 'SPI'
+  addLabels: ['spi']
