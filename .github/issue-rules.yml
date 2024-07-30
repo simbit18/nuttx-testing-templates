@@ -12,3 +12,12 @@ rules:
 - valueFor: '**Related area**'
   contains: 'SPI'
   addLabels: ['spi']
+- valueFor: 'Architecture'
+  contains: 'arm'
+  addLabels: ['spi', 'ADC']
+- valueFor: 'Architecture'
+  contains: 'arm64'
+  addLabels: ['I2C']
+- valueFor: 'Architecture'
+  contains: 'sim'
+  addLabels: ['ADC']
