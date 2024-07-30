@@ -74,11 +74,11 @@ body:
       required: true
 
   - type: input
-    id: Area
+    id: area
     attributes:
       label: Related area
       description: Please briefly explain the area of your Feature Request.
-      placeholder: eg. Board support, specific Peripheral, GPIO, Wifi...
+      placeholder: eg. area: Board support, specific Peripheral, GPIO, Wifi...
     validations:
       required: true
 
