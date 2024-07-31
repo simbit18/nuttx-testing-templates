@@ -60,7 +60,7 @@ body:
         - "Architecture: mips"
         - "Architecture: misoc"
         - "Architecture: ort1k"
-        - "Architecture: renesa"s
+        - "Architecture: renesas"
         - "Architecture: risc-v"
         - "Architecture: sim"
         - "Architecture: sparc"
