@@ -16,7 +16,7 @@
 # primary rules
 rules:
 # Area: 1
-- valueFor: 'Related area'
+- valueFor: 'area'
   contains: 'i2c'
   addLabels: ['I2C']
 # Area: 2
@@ -28,11 +28,17 @@ rules:
   addLabels: ['spi']
 # dropdown architecture
 - valueFor: 'Architecture'
+  contains: 'all'
+  addLabels: ['all']
+- valueFor: 'Architecture'
   contains: 'arm'
-  addLabels: ['spi', 'ADC']
+  addLabels: ['arm']
 - valueFor: 'Architecture'
   contains: 'arm64'
-  addLabels: ['I2C']
+  addLabels: ['arm64']
+- valueFor: 'Architecture'
+  contains: 'avr'
+  addLabels: ['avr']
 - valueFor: 'Architecture'
   contains: 'sim'
-  addLabels: ['ADC']
+  addLabels: ['sim']

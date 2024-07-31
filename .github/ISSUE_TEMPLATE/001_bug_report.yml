@@ -54,22 +54,22 @@ body:
         - "Architecture: all"
         - "Architecture: arm"
         - "Architecture: arm64"
-        - avr
-        - ceva
-        - hc
-        - mips
-        - misoc
-        - ort1k
-        - renesas
-        - risc-v
-        - sim
-        - sparc
-        - tricore
-        - x86
-        - x86_64
-        - xtensa
-        - z16
-        - z80
+        - "avr"
+        - "Architecture: ceva"
+        - "Architecture: hc"
+        - "Architecture: mips"
+        - "Architecture: misoc"
+        - "Architecture: ort1k"
+        - "Architecture: renesa"s
+        - "Architecture: risc-v"
+        - "Architecture: sim"
+        - "Architecture: sparc"
+        - "Architecture: tricore"
+        - "Architecture: x86"
+        - "Architecture: x86_64"
+        - "Architecture: xtensa"
+        - "Architecture: z16"
+        - "Architecture: z80"
     validations:
       required: true
 
