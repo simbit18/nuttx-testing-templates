@@ -15,17 +15,64 @@
 
 # primary rules
 rules:
-# Area: 1
-- valueFor: 'area2'
-  contains: 'i2c'
-  addLabels: ['I2C']
 # dropdown: area
-- valueFor: 'Related area'
-  contains: 'adc'
-  addLabels: ['ADC']
-- valueFor: 'Related area'
-  contains: 'SPI'
-  addLabels: ['spi']
+- valueFor: 'Area'
+  contains: 'Other'
+  addLabels: ['other']
+- valueFor: 'Area'
+  contains: 'Applications'
+  addLabels: ['applications']
+- valueFor: 'Area'
+  contains: 'Api'
+  addLabels: ['api']
+- valueFor: 'Area'
+  contains: 'Board support'
+  addLabels: ['board support']
+- valueFor: 'Area'
+  contains: 'Build System'
+  addLabels: ['build system']
+- valueFor: 'Area'
+  contains: 'Configuring'
+  addLabels: ['configuring']
+- valueFor: 'Area'
+  contains: 'Debugging'
+  addLabels: ['debugging']
+- valueFor: 'Area'
+  contains: 'Drivers'
+  addLabels: ['drivers']
+- valueFor: 'Area'
+  contains: 'File System'
+  addLabels: ['file system']
+- valueFor: 'Area'
+  contains: 'Installing'
+  addLabels: ['installing']
+- valueFor: 'Area'
+  contains: 'Kconfig'
+  addLabels: ['kconfig']
+- valueFor: 'Area'
+  contains: 'Kernel'
+  addLabels: ['kernel']
+- valueFor: 'Area'
+  contains: 'Memory Management'
+  addLabels: ['memory management']
+- valueFor: 'Area'
+  contains: 'Native port'
+  addLabels: ['native port']
+- valueFor: 'Area'
+  contains: 'Networking'
+  addLabels: ['networking']
+- valueFor: 'Area'
+  contains: 'OS Components'
+  addLabels: ['os components']
+- valueFor: 'Area'
+  contains: 'Posix'
+  addLabels: ['posix']
+- valueFor: 'Area'
+  contains: 'Sensors'
+  addLabels: ['sensors']
+- valueFor: 'Area'
+  contains: 'Specific Peripheral'
+  addLabels: ['specific peripheral']
 # dropdown: architecture
 - valueFor: 'Architecture'
   contains: 'all'

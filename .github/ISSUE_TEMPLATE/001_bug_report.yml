@@ -102,15 +102,6 @@ body:
     validations:
       required: true
 
-  - type: input
-    id: area2
-    attributes:
-      label: Related area2
-      description: Please briefly explain the area of your Feature Request.
-      placeholder: "eg. area: Board support, specific Peripheral, GPIO, Wifi..."
-    validations:
-      required: false
-
   - type: markdown
     attributes:
       value: |
