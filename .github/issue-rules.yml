@@ -16,17 +16,17 @@
 # primary rules
 rules:
 # Area: 1
-- valueFor: 'area'
+- valueFor: 'area2'
   contains: 'i2c'
   addLabels: ['I2C']
-# Area: 2
+# dropdown: area
 - valueFor: 'Related area'
   contains: 'adc'
   addLabels: ['ADC']
 - valueFor: 'Related area'
   contains: 'SPI'
   addLabels: ['spi']
-# dropdown architecture
+# dropdown: architecture
 - valueFor: 'Architecture'
   contains: 'all'
   addLabels: ['all']
@@ -40,5 +40,47 @@ rules:
   contains: 'avr'
   addLabels: ['avr']
 - valueFor: 'Architecture'
-  contains: 'sim'
-  addLabels: ['sim']
+  contains: 'ceva'
+  addLabels: ['ceva']
+- valueFor: 'Architecture'
+  contains: 'hc'
+  addLabels: ['hc']
+- valueFor: 'Architecture'
+  contains: 'mips'
+  addLabels: ['mips']
+- valueFor: 'Architecture'
+  contains: 'misoc'
+  addLabels: ['misoc']
+- valueFor: 'Architecture'
+  contains: 'openrisc'
+  addLabels: ['openrisc']
+- valueFor: 'Architecture'
+  contains: 'renesas'
+  addLabels: ['renesas']
+- valueFor: 'Architecture'
+  contains: 'risc-v'
+  addLabels: ['risc-v']
+- valueFor: 'Architecture'
+  contains: 'simulator'
+  addLabels: ['simulator']
+- valueFor: 'Architecture'
+  contains: 'sparc'
+  addLabels: ['sparc']
+- valueFor: 'Architecture'
+  contains: 'tricore'
+  addLabels: ['tricore']
+- valueFor: 'Architecture'
+  contains: 'x86'
+  addLabels: ['x86']
+- valueFor: 'Architecture'
+  contains: 'x86_64'
+  addLabels: ['x86_64']
+- valueFor: 'Architecture'
+  contains: 'xtensa'
+  addLabels: ['xtensa']
+- valueFor: 'Architecture'
+  contains: 'z16'
+  addLabels: ['z16']
+- valueFor: 'Architecture'
+  contains: 'z80'
+  addLabels: ['z80']
