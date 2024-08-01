@@ -29,18 +29,31 @@ body:
         ### Environment
 
         Please specify your environment.
-  - type: input
+
+- type: dropdown
+    id: OS
     attributes:
-      label: "Operating system/version"
-      description: On which OS does this issue occur?
-      placeholder: "eg. Ubuntu 20.4, macOS 13, Windows/MSYS_NT-10.0-19045, ecc"
+      label: On which OS does this issue occur?
+      options:
+        - 'Linux'
+        - 'Mac'
+        - 'Windows'
+    validations:
+      required: true
+
+  - type: input
+    id: OS_version
+    attributes:
+      label: What is the version of your OS?
+      description: Please fill out the distro or OS version from the previous dropdown
+      placeholder: Fedora 39, Ubuntu 23.10, Windows 10/MSYS_NT-10.0-19045, MacOS 14
     validations:
       required: true
 
   - type: input
     attributes:
       label: "NuttX Version"
-      placeholder: "eg. master, 12.5.1, ecc"
+      placeholder: "e.g., master, 12.5.1, ecc"
     validations:
       required: true
 
