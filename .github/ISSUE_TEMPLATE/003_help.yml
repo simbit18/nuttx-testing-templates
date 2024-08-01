@@ -1,6 +1,6 @@
 name: General Help
 description: Get general support regarding NuttX
-title: "[HELP] help <title>"
+title: "[HELP] <title>"
 labels: [question]
 body:
   - type: markdown

@@ -45,7 +45,7 @@ body:
     attributes:
       label: What is the version of your OS?
       description: Please fill out the distro or OS version from the previous dropdown
-      placeholder: Fedora 39, Ubuntu 23.10, Windows 10/MSYS_NT-10.0-19045, MacOS 14
+      placeholder: "MacOS 14, Ubuntu 23.10, Windows 10/MSYS_NT-10.0-19045, ecc"
     validations:
       required: true
 
