@@ -27,10 +27,9 @@ body:
     attributes:
       value: |
         ### Environment
-
         Please specify your environment.
 
-- type: dropdown
+  - type: dropdown
     id: OS
     attributes:
       label: On which OS does this issue occur?
@@ -52,7 +51,7 @@ body:
 
   - type: input
     attributes:
-      label: "NuttX Version"
+      label: NuttX Version
       placeholder: "e.g., master, 12.5.1, ecc"
     validations:
       required: true
