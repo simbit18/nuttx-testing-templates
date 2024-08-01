@@ -26,13 +26,19 @@ jobs:
     permissions:
       issues: write
     steps:
-      - name: check issue title
+      - name: Check issue body
         uses: actions/github-script@v7
         with:
           script: |
             const body = context.payload.issue.body;
-            const bodySplit = body.split(/\b/).map(e => e.toLowerCase());
-            const keywords = ['api', 'windows', 'linux', 'arm', 'all'];
+            const bodySplit = body.split(/\[|\]/).map(e => e.toLowerCase());
+            // const bodySplit = body.split(/\b/).map(e => e.toLowerCase());
+            const OSkeywords = ['other', 'linux', 'mac', 'Windows'];
+            const Archkeywords1 = ['all', 'arm', 'arm64', 'avr', 'ceva', 'hc', 'mips', 'misoc', 'openrisc', 'renesas'];
+            const Archkeywords2 = ['risc-v', 'simulator', 'sparc', 'tricore', 'x86', 'x86_64', 'xtensa', 'z16', 'z80', 'renesas'];
+            const Areakeywords1 = ['applications', 'api', 'board support', 'build system', 'configuring', 'debugging', 'drivers', 'file system', 'installing', 'kconfig'];
+            const Areakeywords2 = ['kernel', 'memory management', 'native port', 'networking', 'os components', 'posix', 'sensors', 'specific peripheral', 'openrisc', 'renesas'];
+            const keywords = [...OSkeywords, ...Archkeywords1, ...Archkeywords2, ...Areakeywords1, ...Areakeywords2];
             var match = new Set();
             for (const keyword of keywords) {
               if (bodySplit.includes(keyword)) {
