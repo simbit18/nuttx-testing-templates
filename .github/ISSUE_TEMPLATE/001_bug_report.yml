@@ -30,18 +30,19 @@ body:
         Please specify your environment.
 
   - type: dropdown
-    id: OS
+    id: os
     attributes:
       label: On which OS does this issue occur?
       options:
-        - 'Linux'
-        - 'Mac'
-        - 'Windows'
+        - "OS: Other"
+        - "OS: Linux"
+        - "OS: Mac"
+        - "OS: Windows"
     validations:
       required: true
 
   - type: input
-    id: OS_version
+    id: os_version
     attributes:
       label: What is the version of your OS?
       description: Please fill out the distro or OS version from the previous dropdown
