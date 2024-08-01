@@ -15,6 +15,19 @@
 
 # primary rules
 rules:
+# dropdown: os
+- valueFor: 'OS'
+  contains: 'Other'
+  addLabels: ['other']
+- valueFor: 'OS'
+  contains: 'Linux'
+  addLabels: ['linux']
+- valueFor: 'OS'
+  contains: 'Mac'
+  addLabels: ['mac']
+- valueFor: 'OS'
+  contains: 'Windows'
+  addLabels: ['windows']
 # dropdown: area
 - valueFor: 'Area'
   contains: 'Other'
