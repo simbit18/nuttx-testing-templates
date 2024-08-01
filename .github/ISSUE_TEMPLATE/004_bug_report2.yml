@@ -94,8 +94,8 @@ body:
       multiple: true
       options:
         - "[Other]"
-        - "[Applications"
-        - "[Api"
+        - "[Applications]"
+        - "[Api]"
         - "[Board support]"
         - "[Build System]"
         - "[Configuring]"
