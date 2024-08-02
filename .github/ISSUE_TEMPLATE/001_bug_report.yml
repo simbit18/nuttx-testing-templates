@@ -11,7 +11,7 @@
 # limitations under the License.
 #
 name: Bug report
-description: Report a bug to improve NuttX stability 2
+description: Report a bug to improve NuttX stability
 title: "[BUG] <title>"
 labels: [👀 needs triage, bug]
 body:
@@ -45,11 +45,12 @@ body:
     id: os
     attributes:
       label: On which OS does this issue occur?
+      multiple: true
       options:
-        - "[Other]"
         - "[Linux]"
         - "[Mac]"
         - "[Windows]"
+        - "[Other]"
     validations:
       required: true
 

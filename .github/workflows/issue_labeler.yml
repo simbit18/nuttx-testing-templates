@@ -35,7 +35,7 @@ jobs:
             const areakeywords2 = ['kernel', 'memory management', 'native port', 'networking', 'os components', 'posix', 'sensors', 'specific peripheral', 'openrisc', 'renesas'];
             const keywords = [...oskeywords, ...archkeywords1, ...archkeywords2, ...areakeywords1, ...areakeywords2];
             var keywordsfound = new Set();
-            for (const keyword of keywords) 
+            for (const keyword of keywords) {
               if (bodySplit.includes(keyword)) {
                 keywordsfound.add(keyword)
               }
