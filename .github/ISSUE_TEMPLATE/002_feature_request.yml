@@ -13,7 +13,7 @@
 name: Feature request
 description: Request an enhancement for NuttX
 title: "[FEATURE] <title>"
-labels: ["Type: enhancement"]
+labels: ["Type: Enhancement"]
 body:
   - type: markdown
     attributes:

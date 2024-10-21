@@ -13,7 +13,7 @@
 name: General Help
 description: Get general support regarding NuttX
 title: "[HELP] <title>"
-labels: ["Type: question"]
+labels: ["Type: Question"]
 body:
   - type: markdown
     attributes:

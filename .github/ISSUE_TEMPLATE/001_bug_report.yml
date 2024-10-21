@@ -13,7 +13,7 @@
 name: Bug report
 description: Report a bug to improve NuttX stability
 title: "[BUG] <title>"
-labels: [👀 needs triage, "Type: bug"]
+labels: [👀 needs triage, "Type: Bug"]
 body:
   - type: markdown
     attributes:
