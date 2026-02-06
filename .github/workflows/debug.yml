@@ -32,8 +32,8 @@ jobs:
         with:
           script: |
             const payload = context.payload
-            # const result = await github.request(diff_url)
-            console.log(payload)
+            const result = await github.request(payload)
+            console.log(result)
       - name: Checkout diff_url
         uses: actions/github-script@v8
         with:
