@@ -28,14 +28,14 @@ jobs:
 
     steps:
       - name: Checkout payload
-      - uses: actions/github-script@v8
+        uses: actions/github-script@v8
         with:
           script: |
             const payload = context.payload
             # const result = await github.request(diff_url)
             console.log(payload)
       - name: Checkout diff_url
-      - uses: actions/github-script@v8
+        uses: actions/github-script@v8
         with:
           script: |
             const diff_url = context.payload.pull_request.diff_url
